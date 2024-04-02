@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoping</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header container">
+      <div class="search-buttom">
+        <form action="/search" method="get">
+          <input type="search" name="search" placeholder="search..." />
+        </form>
+      </div>
+
+      <div class="center-content">
+        <h1>E&C</h1>
+        <ul>
+          <li><a href="#">Home & living</a></li>
+          <li><a href="#">Accesories</a></li>
+          <li><a href="#">Stationery</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Gift Card</a></li>
+        </ul>
+      </div>
+
+      <div class="log-content">
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">CArt(0)</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero-container">
+        <div class="hero-items">
+          <div class="hero-content">
+            <h3>Bring your magic style out</h3>
+            <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint nam
+            autem ipsum accusantium illo suscipit nulla voluptates, pariatur
+            ipsam ducimus minima iusto provident! Delectus vero mollitia quas
+            nihil molestias assumenda.
+            </p>
+            <button class="shop-button">Shop Now</button>
+          </div>
+
+        </div>
+        <div class = "hero-items">
+          <figure class ="hero-figure">
+            <img class ="hero-image"src="/assets/images/hero.webp" alt="hero-image">
+          </figure>
+        </div>
+      </section>
+      
+      <!-- Featured Porducts -->
+      <section class="products-container">
+        <div class="products-items">
+          <h2>Featured Products</h2>
+          <div class="products__gallery">
+              <div class="product"><!-- product-1 -->
+                  <div class="product__image">
+                      <img src="/assets/images/products/collection-1_large.webp" alt="Featured product 1">
+                  </div>
+                  <div class="product__info">
+                      <h4>Product 1</h4>
+                      <p><del>$150.00</del> $100.00</p>
+                      <button class="add-to-cart" role="button">Add to Cart</button>
+                  </div>
+                  <div class="product__discount">33%</div>
+              </div>             
+              <div class="product"><!-- product-2 -->
+                <div class="product__image">
+                    <img src="/assets/images/products/collection-2_large.webp" alt="Featured product 2">
+                </div>
+                <div class="product__info">
+                    <h4>Product 2</h4>
+                    <p><del>$150.00</del> $100.00</p>
+                    <button class="add-to-cart" role="button">Add to Cart</button>
+                </div>
+              </div> 
+              <div class="product"><!-- product-3 -->
+                <div class="product__image">
+                    <img src="/assets/images/products/collection-3_large.webp" alt="Featured product 3">
+                </div>
+                <div class="product__info">
+                    <h4>Product 3</h4>
+                    <p><del>$150.00</del> $100.00</p>
+                    <button class="add-to-cart" role="button">Add to Cart</button>
+                </div>
+                <div class="product__discount">33%</div>
+              </div>
+              <div class="product"> <!-- product-4 -->
+                <div class="product__image">
+                    <img src="/assets/images/products/collection-4_large.webp" alt="Featured product 4">
+                </div>
+                <div class="product__info">
+                    <h4>Product 4</h4>
+                    <p><del>$150.00</del> $100.00</p>
+                    <button class="add-to-cart" role="button">Add to Cart</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

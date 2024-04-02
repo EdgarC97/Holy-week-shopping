@@ -1,0 +1,199 @@
+/* Personal Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+/* Variables */
+:root {
+  /* Colors */
+  --main-color: #c48a4f;
+  --second-color: #d9a280;
+  --paragraph-color: #333;
+  --third-color: #87552c;
+  --fourth-color: #c58b90;
+  --fifth-color: #cebad3;
+
+  /* Spaces */
+  --space-1: 10px;
+  --space-2: 20px;
+  --space-3: 30px;
+  --space-4: 40px;
+}
+
+/* Reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+input {
+  padding: 10px 0px 10px 13px;
+  border-radius: 8px;
+  border: 2px solid #cccccc8f;
+}
+
+h1 {
+  font-size: 3.6rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.45rem;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h6 {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* ---------------------------------------- */
+
+/* Body */
+
+/* Container */
+.container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+header .search-buttom {
+  margin-left: 20px;
+}
+
+header .center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .center-content > ul {
+  display: flex;
+}
+
+header > .center-content > ul,
+header > .log-content > ul {
+  display: flex;
+  gap: 40px;
+}
+
+/* Main */
+
+/* Hero */
+
+.hero-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.hero-items{
+  flex:1 0 450px;
+  background-color: var(--main-color);
+  margin-top: 30px;
+
+}
+
+.hero-figure{
+  width: 100%;
+
+}
+.hero-image{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+
+
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap : 20px;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+
+.shop-button{
+  background: transparent;
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: 2px solid rgb(28, 26, 26);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.shop-button:hover{
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+/* Featured-products */
+
+
+.products-items >h2{
+  text-align: center;
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+
+
+
