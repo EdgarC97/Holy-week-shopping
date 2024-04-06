@@ -4,12 +4,10 @@
 /* Variables */
 :root {
   /* Colors */
-  --main-color: #c48a4f;
-  --second-color: #d9a280;
+  /* Colors */
+  --main-color: #f1e4b8;
+  --second-color: #eae1f5;
   --paragraph-color: #333;
-  --third-color: #87552c;
-  --fourth-color: #c58b90;
-  --fifth-color: #cebad3;
 
   /* Spaces */
   --space-1: 10px;
@@ -99,29 +97,29 @@ h6 {
 }
 
 /* Header */
-header.header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
 
-header .search-buttom {
+.search-buttom {
   margin-left: 20px;
 }
 
-header .center-content {
+.center-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-header .center-content > ul {
+.center-content > ul {
   display: flex;
 }
 
-header > .center-content > ul,
-header > .log-content > ul {
+.center-content > ul,
+.log-content > ul {
   display: flex;
   gap: 40px;
 }
@@ -187,13 +185,174 @@ header > .log-content > ul {
 
 /* Featured-products */
 
+/* Products */
 
-.products-items >h2{
-  text-align: center;
+.featured-products > h2 {
   margin-top: var(--space-3);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
+  text-align: center;
+}
+
+.products-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product {
+  flex: 0 0 calc((100% - 30px) / 4);
+  padding: 10px 10px;
+  position: relative;
+}
+
+.product-image {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-image> img {
+  width: 100%;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: var(--space-1);
+}
+
+.product-info> button {
+  appearance: none;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--paragraph-color);
+  cursor: pointer;
+  font-size: 16px;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.product-discount {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -15px;
+  left: -15px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
+/* Season sale section */
 
 
+main > section.season-sale {
+  background: url(/assets/images/products/sale_end.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.season-sale-info {
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  left: 2%;
+}
+
+.season-sale-info > button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 7px;
+  font-size: 18px;
+}
+
+/* Home and living section */
+  
+.home-living > h3 {
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-4);
+  text-align: center;
+}
+
+.home-living-photos > div:nth-child(2),
+.home-living-photos > div:nth-child(3) {
+  background-color: var(--second-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.home-living-photos > div > button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.home-living-photos {
+  display: grid;
+  margin: 0 auto;
+  width: 80%;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.home-living-photos > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Footer section */
+.footer {
+  background-color: var(--main-color);
+  margin-top: var(--space-4);
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  padding-top: var(--space-2);
+}
+
+.footer-section > div {
+  flex-basis: calc(33.3%);
+}
+
+.footer-contact > div.social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.footer .social> img {
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+}
+.footer-subscribe > form  {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px
+}
+.footer-subscribe > form > button {
+  padding: 10px 20px;
+  background-color: var(--paragraph-color);
+  color: var(--second-color);
+  border-radius: 7px;
+  font-size: 16px;
+}

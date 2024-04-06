@@ -34,8 +34,7 @@
         </ul>
       </div>
     </header>
-
-    <main>
+    <main class="main">
       <!-- Hero -->
       <section class="hero-container">
         <div class="hero-items">
@@ -56,60 +55,136 @@
             <img class ="hero-image"src="/assets/images/hero.webp" alt="hero-image">
           </figure>
         </div>
-      </section>
-      
+      </section>      
       <!-- Featured Porducts -->
-      <section class="products-container">
-        <div class="products-items">
+      <section class="featured-products container">
           <h2>Featured Products</h2>
-          <div class="products__gallery">
+          <div class="products-gallery">
               <div class="product"><!-- product-1 -->
-                  <div class="product__image">
+                  <div class="product-image">
                       <img src="/assets/images/products/collection-1_large.webp" alt="Featured product 1">
                   </div>
-                  <div class="product__info">
+                  <div class="product-info">
                       <h4>Product 1</h4>
                       <p><del>$150.00</del> $100.00</p>
                       <button class="add-to-cart" role="button">Add to Cart</button>
                   </div>
-                  <div class="product__discount">33%</div>
+                  <div class="product-discount">33%</div>
               </div>             
               <div class="product"><!-- product-2 -->
-                <div class="product__image">
+                <div class="product-image">
                     <img src="/assets/images/products/collection-2_large.webp" alt="Featured product 2">
                 </div>
-                <div class="product__info">
+                <div class="product-info">
                     <h4>Product 2</h4>
                     <p><del>$150.00</del> $100.00</p>
                     <button class="add-to-cart" role="button">Add to Cart</button>
                 </div>
               </div> 
               <div class="product"><!-- product-3 -->
-                <div class="product__image">
+                <div class="product-image">
                     <img src="/assets/images/products/collection-3_large.webp" alt="Featured product 3">
                 </div>
-                <div class="product__info">
+                <div class="product-info">
                     <h4>Product 3</h4>
                     <p><del>$150.00</del> $100.00</p>
                     <button class="add-to-cart" role="button">Add to Cart</button>
                 </div>
-                <div class="product__discount">33%</div>
+                <div class="product-discount">33%</div>
               </div>
               <div class="product"> <!-- product-4 -->
-                <div class="product__image">
+                <div class="product-image">
                     <img src="/assets/images/products/collection-4_large.webp" alt="Featured product 4">
                 </div>
-                <div class="product__info">
+                <div class="product-info">
                     <h4>Product 4</h4>
                     <p><del>$150.00</del> $100.00</p>
                     <button class="add-to-cart" role="button">Add to Cart</button>
                 </div>
               </div>
           </div>
+      </section>
+      <!-- Season sale -->
+      <section class="season-sale">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L30,58.7C60,85,120,139,180,133.3C240,128,300,64,360,53.3C420,43,480,85,540,101.3C600,117,660,107,720,101.3C780,96,840,96,900,90.7C960,85,1020,75,1080,80C1140,85,1200,107,1260,138.7C1320,171,1380,213,1410,234.7L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path>
+        </svg>
+        <div class="season-sale-info">
+            <h2>Catch Our End of Season Sale</h2>
+            <button>Shop Now</button>
         </div>
       </section>
+      <!-- Home & Living -->
+      <section class="home-living">
+        <h3>Home & Living Essentials</h3>
+        <div class="home-living-photos">
+            <div class="card"><img src="/assets/images/products/home_living_1.webp" alt="imagen de almohadas"></div>
+            <div class="card">
+                <h2>Geometric Bedding</h2>
+                <p><del>$99.99</del> <span>$79.99</span></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <h2>Geometric Bedding</h2>
+                <p><del>$99.99</del> <span>$79.99</span></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card"><img src="/assets/images/products/home_living_2.webp" alt="imagen de platos con naranjas"></div>
+        </div>
+    </section>
     </main>
-
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-section container">
+          <div class="footer-shop">
+              <h5>Shop</h5>
+              <nav>
+                  <ul>
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Home & Living</a></li>
+                      <li><a href="#">Accesories</a></li>
+                      <li><a href="#">Stationery</a></li>
+                      <li><a href="#">Sale</a></li>
+                      <li><a href="#">Gift Card</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="footer-help">
+              <h5>Helpful Links</h5>
+              <nav>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Shipping Policy</a></li>
+                      <li><a href="#">Refund Policy</a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="footer-contact">
+              <h5>Contact</h5>
+              <nav>
+                  <ul>
+                      <li><a href="#">info@mysite.com</a></li>
+                      <li>123-456-7890</li>
+                      <li>500 Terry Francine Street, San Francisco, CA 94158</li>
+                  </ul>
+              </nav>
+              <div class="social">
+                  <img src="assets/images/icons/social_instagram.png" alt="Facebook">
+                  <img src="assets/images/icons/social_facebook.png" alt="Facebook">
+                  <img src="assets/images/icons/social_whatssap.png" alt="Facebook">
+                  <img src="assets/images/icons/social_twitter.png" alt="Facebook">
+              </div>
+          </div>
+          <div class="footer-subscribe">
+              <h5>Subscribe</h5>
+              <p>Subscribe to our newsletter and be among the first to hear about new arrivals, events and special offers.</p>
+              <form>
+                  <input type="email" name="" id="">
+                  <button type="submit">Subscribe</button>
+              </form>
+          </div>
+      </div>
+  </footer>
   </body>
 </html>
